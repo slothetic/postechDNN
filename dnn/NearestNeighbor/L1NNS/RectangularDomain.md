@@ -75,9 +75,6 @@ Vector of pointers of rectangular obstacles
 
 *pset*  
 Vector of pointers of data points
-
-*readfile*  
-Text file containing several two coordinates(data points) or four coordinates(rectangular obstacles)
 #### Remarks
 A constructor with no input will make a rectangular domain with only a large bounding box.
 ### ~RectangularDomain()

@@ -30,6 +30,7 @@ protected:
 	int obscnt; // # of obstacles
 	int datacnt; // # of data
 
+	void sampledata();
 	void domainconstruct(int); // Function of construction of rectangular domain
 	void setray(); // Function to compute rectangles hit first by rays from objects 
 	void setlwake(); // Set wake of left side of rectangle

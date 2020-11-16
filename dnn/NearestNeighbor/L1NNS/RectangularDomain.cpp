@@ -1,19 +1,7 @@
 #include"RectangularDomain.h"
 
 RectangularDomain::RectangularDomain() {
-	//sample data
-	/*
-	obstacles.push_back(new Rect(1.6, 5.7, 5.9,12.4));
-	obstacles.push_back(new Rect(3.4, 7.8, 13.5,17.0));
-	obstacles.push_back(new Rect(8.5, 13.4, 4.7, 9.7));
-	obstacles.push_back(new Rect(11.2, 15.8, 12.3, 14.3));
-	obstacles.push_back(new Rect(16.6, 23.1, 14.1, 15.5));
-	obstacles.push_back(new Rect(17.9, 30.0, 7.8, 12.8));
-	obstacles.push_back(new Rect(14.9, 20.0, 1.5, 5.1));
-	data.push_back(new Point(15.95, 14.8));
-	data.push_back(new Point(15.98, 13.6));
-	data.push_back(new Point(16.14, 9.9));
-	data.push_back(new Point(16.22, 5.7));*/
+	sampledata();
 	domainconstruct(INIT);
 }
 
@@ -23,6 +11,20 @@ RectangularDomain::RectangularDomain(vector<Rect*> rinput, vector<Point*> pinput
 	for (int i = 0; i < pinput.size(); i++)
 		data.push_back(pinput[i]);
 	domainconstruct(INIT);
+}
+
+void RectangularDomain::sampledata() {
+	obstacles.push_back(new Rect(1.6, 5.7, 5.9, 12.4));
+	obstacles.push_back(new Rect(3.4, 7.8, 13.5, 17.0));
+	obstacles.push_back(new Rect(8.5, 13.4, 4.7, 9.7));
+	obstacles.push_back(new Rect(11.2, 15.8, 12.3, 14.3));
+	obstacles.push_back(new Rect(16.6, 23.1, 14.1, 15.5));
+	obstacles.push_back(new Rect(17.9, 30.0, 7.8, 12.8));
+	obstacles.push_back(new Rect(14.9, 20.0, 1.5, 5.1));
+	data.push_back(new Point(15.95, 14.8));
+	data.push_back(new Point(15.98, 13.6));
+	data.push_back(new Point(16.14, 9.9));
+	data.push_back(new Point(16.22, 5.7));
 }
 
 void RectangularDomain::domainconstruct(int state) {
