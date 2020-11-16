@@ -1,12 +1,11 @@
 # Example of $L_1$ Nearest Neighbor Search in Rectangular Domain (L1NNS)
 Sample execute file is available for $L_1$ Nearest Neighbor Search in Rectangular Domain (L1NNS).  
-This field is for users who want to compile.   
 This program is developed using Microsoft Visual Studio 2019.  
-To compile and execute the program, you may need freeglut 3.0.0 MSVC Package in https://www.transmissionzero.co.uk/software/freeglut-devel/.   
+To compile main.cpp and execute the program, you may need freeglut 3.0.0 MSVC Package in https://www.transmissionzero.co.uk/software/freeglut-devel/.   
 Unzip freeglut-MSVC-3.0.0-2.mp.zip file. You may see three folders, **bin**, **include**, and **lib**.  
 and put **include** and **lib** folder into the directory in which source codes are contained.  
 Also, put freeglut.dll in *bin* folder into the above directory.   
-Then do the following in Visual Studio.  
+Then do the following in the Visual Studio.  
 ```
 Project -> Properties -> C/C++ -> General -> Additional Include Directories -> add "./include;"  
 Project -> Properties -> Linker -> General -> Additional Library Directories -> add "./lib;"  
